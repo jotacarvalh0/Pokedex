@@ -1,4 +1,3 @@
-
 .pokemons{
     display: grid;  /* Posicionar elementos em uma grade bidimensional. */
     grid-template-columns: 1fr; /* Define quantas colunas tera. */
@@ -7,6 +6,23 @@
     margin: 0;
 }
 
+.normal{background-color: #a6a877; filter: brightness(1.1);}
+.grass{background-color: #77c850; filter: brightness(1.1);}
+.fire{background-color: #ee7f30; filter: brightness(1.1);}
+.water{background-color: #678fee; filter: brightness(1.1);}
+.eletric{background-color: #f7cf2e; filter: brightness(1.1);}
+.ice{background-color: #98d5d7; filter: brightness(1.1);}
+.ground{background-color: #dfbf69; filter: brightness(1.1);}
+.flying{background-color: #a98ff0; filter: brightness(1.1);}
+.poison{background-color: #a040a0; filter: brightness(1.1);}
+.psychic{background-color: #f65687; filter: brightness(1.1);}
+.dark{background-color: #725847; filter: brightness(1.1);}
+.rock{background-color: #b8a137; filter: brightness(1.1);}
+.bug{background-color: #a8b720; filter: brightness(1.1);}
+.ghost{background-color: #6e5896; filter: brightness(1.1);}
+.steel{background-color: #b9b7cf; filter: brightness(1.1);}
+.dragon{background-color: #6f38f6; filter: brightness(1.1);}
+.fairy{background-color: #f9aec7; filter: brightness(1.1);}
 
 .pokemon {
     display: flex;
@@ -14,8 +30,6 @@
     margin: .5rem;
     padding: 1rem;
     border-radius: 1rem;
-    background-color: #49D0B0;
-    color: white;
 }
 
 .pokemon .number{
@@ -28,6 +42,7 @@
 .pokemon .name {
     color: white;
     margin: .25rem 0;
+    text-transform: capitalize;
 }
 
 .pokemon .detail{
@@ -43,8 +58,8 @@
     list-style: none;
 }
 
-.pokemon .detail .type {
-    background-color: #61E1CA;
+.pokemon .detail .types .type {
+    text-align: center;
     color: white;
     padding: .25rem .5rem;
     margin: .25rem 0;
